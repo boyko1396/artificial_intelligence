@@ -715,6 +715,7 @@
   position: relative;
   z-index: 1;
   .swiper-pagination-bullet {
+    @extend %area-click;
     background: rgba($whiteColor, .2);
     width: 10rem;
     height: 10rem;
