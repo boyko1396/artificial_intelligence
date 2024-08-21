@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240821143026">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aff4">
+  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#00aff4">
+  <title>Artificial Intelligence</title>
+</head>
+<body class="u-scrollbar">
+
+  <div id="root" class="site">
+    <div class="site__inner">
+
+      <header class="header site__header">
+        <div class="container container--size-md header__container">
+          <div class="header__inner">
+            <div class="u-box u-box--theme-white-light header__inner-bg"></div>
+            <a href="/" class="logo logo--size-sm header__logo">
+              <span class="logo__title">
+                Искусственный
+                <br>интеллект</span>
+            </a>
+            <div class="header__dropdown">
+              <div class="header__dropdown-inner">
+                <div class="d-lg-block header__dropdown-header">
+                  <a href="/" class="logo header__dropdown-logo">
+                    <span class="logo__title">
+                      Искусственный
+                      <br>интеллект</span>
+                  </a>
+                  <button type="button" class="js-header-toggle header__toggle-close">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#menu-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <nav class="header__nav" role="navigation">
+                  <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                      <a href="#about" class="js-anchor header__nav-link">О компании</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#services" class="js-anchor header__nav-link">Услуги</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#faq" class="js-anchor header__nav-link">FAQ</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#contacts" class="js-anchor header__nav-link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <a href="#contacts" class="js-anchor btn header__btn-call btn--size-md btn--theme-white-fill d-lg-none">
+                  <span class="btn__inner">
+                    <span class="btn__title">Связаться</span>
+                  </span>
+                </a>
+                <a href="#contacts" class="js-anchor btn btn--size-lg btn--theme-accent-fill d-lg-block header__btn-call">
+                  <span class="btn__inner">
+                    <span class="btn__title">Связаться</span>
+                  </span>
+                </a>
+                <ul class="d-lg-block header__dropdown-sc sc-list">
+                  <li class="sc-list__item">
+                    <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#sc-telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sc-list__item">
+                    <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#sc-phone"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sc-list__item">
+                    <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#sc-hh"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="d-lg-block header__toggle-open js-header-toggle">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#menu-open"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main role="main" class="site__main">
+
+        <section id="intro" class="intro">
+          <picture class="intro__bg">
+            <source srcset="images/intro-hero-767.webp" type="image/webp" media="(max-width: 767px)">
+            <source srcset="images/intro-hero-767.jpg" media="(max-width: 767px)">
+            <source srcset="images/intro-hero.webp" type="image/webp">
+            <img src="images/intro-hero.jpg" alt="Разработка Искусственного интеллекта" width="1920" height="840"></picture>
+          <div class="container container--size-md intro__container">
+            <div class="intro__block">
+              <h1 class="intro__block-title">
+                Разработка
+                <br>
+                <span class="color-accent">Искусственного</span>
+                <br>
+                <span class="color-accent">интеллекта</span>
+              </h1>
+              <div class="intro__block-appeal">
+                <h2 class="intro__block-appeal-subtitle">
+                  Создаем инновационные решения на базе ИИ&nbsp;для бизнеса и&nbsp;жизни, адаптированные под&nbsp;ваши задачи
+                </h2>
+                <div class="btn-group intro__block-appeal-btn-group">
+                  <div class="btn-group__inner">
+                    <div class="btn-group__col">
+                      <a href="#" class="btn btn--size-lg btn--theme-accent-fill btn-group__el">
+                        <span class="btn__inner">
+                          <span class="btn__title">Хочу в команду!</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="btn-group__col">
+                      <a href="#about" class="js-anchor btn btn--size-lg btn--theme-accent-outline btn-group__el">
+                        <span class="btn__inner">
+                          <span class="btn__title">О нас</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container container--size-md about__container">
+            <h2 class="about__title">Чем мы занимаемся?</h2>
+            <div class="about__list js-about-list">
+              <article class="about-card about__list-card js-about-card">
+                <div class="row about-card__row">
+                  <div class="about-card__col about-card__col--title row__col--7">
+                    <div class="about-card__title-wrapper">
+                      <h3 class="about-card__title about-card__title--border">Разработка</h3>
+                    </div>
+                  </div>
+                  <div class="about-card__col about-card__col--content row__col--5">
+                    <div class="about-card__content">
+                      <h3 class="about-card__title d-md-block">Разработка</h3>
+                      <div class="u-content about-card__text">
+                        <p>
+                          Создаём ИИ-системы полного цикла — от концепции и проектирования до внедрения и поддержки.
+                          <br>
+                          Наши специалисты разрабатывают уникальные решения, которые адаптируются под индивидуальные потребности вашего бизнеса.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="about-card about__list-card js-about-card">
+                <div class="row about-card__row">
+                  <div class="about-card__col about-card__col--title row__col--7">
+                    <div class="about-card__title-wrapper">
+                      <h3 class="about-card__title about-card__title--border">Автоматизация</h3>
+                    </div>
+                  </div>
+                  <div class="about-card__col about-card__col--content row__col--5">
+                    <div class="about-card__content">
+                      <h3 class="about-card__title d-mb-block">Автоматизация</h3>
+                      <div class="u-content about-card__text">
+                        <p>
+                          Мы помогаем компаниям автоматизировать сложные процессы с помощью ИИ, что&nbsp;позволяет значительно сократить затраты времени и ресурсов.
+                          <br>
+                          От обработки данных до управления бизнес-процессами — наши решения повышают производительность и&nbsp;эффективность.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="about-card about__list-card js-about-card">
+                <div class="row about-card__row">
+                  <div class="about-card__col about-card__col--title row__col--7">
+                    <div class="about-card__title-wrapper">
+                      <h3 class="about-card__title about-card__title--border">Аналитика</h3>
+                    </div>
+                  </div>
+                  <div class="about-card__col about-card__col--content row__col--5">
+                    <div class="about-card__content">
+                      <h3 class="about-card__title d-mb-block">Аналитика</h3>
+                      <div class="u-content about-card__text">
+                        <p>
+                          Наши ИИ-инструменты проводят глубокий анализ больших данных, выявляя скрытые закономерности и предсказания.
+                          <br>
+                          Это помогает вам принимать более точные и&nbsp;обоснованные решения, минимизируя риски и оптимизируя стратегии развития.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="achievements">
+          <picture class="achievements__bg">
+            <source srcset="images/achievements-bg-767.webp" type="image/webp" media="(max-width: 767px)">
+            <source srcset="images/achievements-bg-767.jpg" media="(max-width: 767px)">
+            <source srcset="images/achievements-bg.webp" type="image/webp">
+            <img src="images/achievements-bg.jpg" alt="Достижения — залог успеха" width="1344" height="590"></picture>
+          <div class="container container--size-md achievements__container">
+            <h2 class="achievements__title">
+              <span class="color-accent">Достижения</span>
+              — залог&nbsp;успеха
+            </h2>
+            <div class="row achievements__list">
+              <div class="row__col--4 achievements__list-col">
+                <article class="u-box u-box--theme-white-light achievements-card achievements__list-card">
+                  <div class="achievements-card__inner">
+                    <div class="achievements-card__header">
+                      <h3 class="achievements-card__title">
+                        <span class="color-accent">300+</span>
+                        проектов
+                      </h3>
+                    </div>
+                    <div class="achievements-card__content">
+                      <div class="u-content achievements-card__text">
+                        <p>
+                          Работаем с клиентами
+                          <br>по всему миру</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col--4 achievements__list-col">
+                <article class="u-box u-box--theme-white-light achievements-card achievements__list-card">
+                  <div class="achievements-card__inner">
+                    <div class="achievements-card__header">
+                      <h3 class="achievements-card__title">
+                        <span class="color-accent">50+</span>
+                        клиентов
+                      </h3>
+                    </div>
+                    <div class="achievements-card__content">
+                      <div class="u-content achievements-card__text">
+                        <p>
+                          Множество крупных компаний
+                          <br>с&nbsp;отраслевыми потребностями</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col--4 achievements__list-col">
+                <article class="u-box u-box--theme-white-light achievements-card achievements__list-card">
+                  <div class="achievements-card__inner">
+                    <div class="achievements-card__header">
+                      <h3 class="achievements-card__title">
+                        <span class="color-accent">50+</span>
+                        экспертов
+                      </h3>
+                    </div>
+                    <div class="achievements-card__content">
+                      <div class="u-content achievements-card__text">
+                        <p>
+                          Команда настоящих
+                          <br>профессионалов</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col--4 achievements__list-col">
+                <article class="u-box u-box--theme-white-light achievements-card achievements__list-card">
+                  <div class="achievements-card__inner">
+                    <div class="achievements-card__header">
+                      <h3 class="achievements-card__title">
+                        <span class="color-accent">5+</span>
+                        лет
+                      </h3>
+                    </div>
+                    <div class="achievements-card__content">
+                      <div class="u-content achievements-card__text">
+                        <p>
+                          Многолетний опыт в создании
+                          <br>и&nbsp;внедрении ИИ</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="info">
+          <div class="container container--size-md info__container">
+            <h2 class="info__title">О нас</h2>
+            <div class="u-box u-box--theme-white-light info__card d-sm-block">
+              <div class="u-content info__card-text">
+                <p>
+                  Мы — компания, которая стоит на&nbsp;передовой искусственного интеллекта, создавая
+                  <span class="color-accent">инновационные технологии</span>
+                  для&nbsp;бизнеса и&nbsp;повседневной жизни
+                </p>
+                <p>
+                  Наши решения меняют привычные процессы и&nbsp;открывают новые горизонты для&nbsp;роста и эффективности
+                </p>
+              </div>
+            </div>
+            <div class="info__list js-info-slider-init swiper">
+              <div class="row info__list-row swiper-wrapper">
+                <div class="row__col--6 info__list-col d-sm-none info__list-col--content">
+                  <div class="u-box u-box--theme-white-light info__card">
+                    <div class="u-content info__card-text">
+                      <p>
+                        Мы — компания, которая стоит на&nbsp;передовой искусственного интеллекта, создавая
+                        <span class="color-accent">инновационные технологии</span>
+                        для&nbsp;бизнеса и&nbsp;повседневной жизни
+                      </p>
+                      <p>
+                        Наши решения меняют привычные процессы и&nbsp;открывают новые горизонты для&nbsp;роста и эффективности
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--6 info__list-col info__list-col--picture swiper-slide">
+                  <picture class="info__picture">
+                    <img src="images/info-img-1.jpg" width="580" height="288"></picture>
+                </div>
+                <div class="row__col--4 info__list-col info__list-col--picture swiper-slide">
+                  <picture class="info__picture">
+                    <img src="images/info-img-2.jpg" width="380" height="288"></picture>
+                </div>
+                <div class="info__list-col info__list-col--picture swiper-slide row__col--8">
+                  <picture class="info__picture">
+                    <img src="images/info-img-3.jpg" width="780" height="288"></picture>
+                </div>
+              </div>
+              <div class="info__list-pagination js-swiper-pagination-info swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="areas-work">
+          <div class="container container--size-md areas-work__container">
+            <div class="row areas-work__row">
+              <div class="row__col--6 areas-work__col areas-work__col--title">
+                <header class="areas-work__header">
+                  <h2 class="areas-work__title">
+                    <span class="color-accent">Направления</span>
+                    работы
+                  </h2>
+                  <h3 class="areas-work__subtitle">
+                    Разрабатываем интеллектуальные решения для&nbsp;оптимизации бизнес-процессов
+                  </h3>
+                </header>
+              </div>
+              <div class="row__col--6 areas-work__col areas-work__col--list">
+                <div class="areas-work__list">
+                  <article class="areas-work-card areas-work__list-card">
+                    <div class="areas-work-card__media">
+                      <picture class="areas-work-card__picture">
+                        <source srcset="images/areas-work-card-1-576.webp" type="image/webp" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-1-576.jpg" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-1.webp" type="image/webp">
+                        <img src="images/areas-work-card-1.jpg" width="580" height="300" alt="Искусственный интеллект для бизнеса"></picture>
+                    </div>
+                    <div class="areas-work-card__content">
+                      <h3 class="fs-6 areas-work-card__title">
+                        Искусственный интеллект
+                        <span class="color-accent">для бизнеса</span>
+                      </h3>
+                      <div class="u-content areas-work-card__text">
+                        <p>
+                          Создаем интеллектуальные решения, которые помогают компаниям оптимизировать процессы, улучшить клиентский сервис и повысить конкурентоспособность на рынке
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="areas-work-card areas-work__list-card">
+                    <div class="areas-work-card__media">
+                      <picture class="areas-work-card__picture">
+                        <source srcset="images/areas-work-card-2-576.webp" type="image/webp" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-2-576.jpg" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-2.webp" type="image/webp">
+                        <img src="images/areas-work-card-2.jpg" width="580" height="300" alt="Прогнозная аналитика"></picture>
+                    </div>
+                    <div class="areas-work-card__content">
+                      <h3 class="fs-6 areas-work-card__title">
+                        <span class="color-accent">Прогнозная</span>
+                        аналитика
+                      </h3>
+                      <div class="u-content areas-work-card__text">
+                        <p>
+                          Разрабатываем решения, которые на&nbsp;основе данных и&nbsp;моделей машинного обучения предсказывают будущие тренды, потребности клиентов и возможные сценарии развития бизнеса
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="areas-work-card areas-work__list-card">
+                    <div class="areas-work-card__media">
+                      <picture class="areas-work-card__picture">
+                        <source srcset="images/areas-work-card-3-576.webp" type="image/webp" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-3-576.jpg" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-3.webp" type="image/webp">
+                        <img src="images/areas-work-card-3.jpg" width="580" height="300" alt="Цифровые ассистенты"></picture>
+                    </div>
+                    <div class="areas-work-card__content">
+                      <h3 class="fs-6 areas-work-card__title">
+                        <span class="color-accent">Цифровые</span>
+                        ассистенты
+                      </h3>
+                      <div class="u-content areas-work-card__text">
+                        <p>
+                          Проектируем голосовых и текстовых помощников, которые взаимодействуют с&nbsp;клиентами на человеческом уровне, улучшая качество обслуживания и&nbsp;повышая уровень удовлетворенности пользователей
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="areas-work-card areas-work__list-card">
+                    <div class="areas-work-card__media">
+                      <picture class="areas-work-card__picture">
+                        <source srcset="images/areas-work-card-4-576.webp" type="image/webp" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-4-576.jpg" media="(max-width: 576px)">
+                        <source srcset="images/areas-work-card-4.webp" type="image/webp">
+                        <img src="images/areas-work-card-4.jpg" width="580" height="300" alt="Машинное обучение"></picture>
+                    </div>
+                    <div class="areas-work-card__content">
+                      <h3 class="fs-6 areas-work-card__title">
+                        <span class="color-accent">Машинное</span>
+                        обучение
+                      </h3>
+                      <div class="u-content areas-work-card__text">
+                        <p>
+                          Разрабатываем системы самообучающихся алгоритмов, которые улучшают свои результаты с&nbsp;каждой новой итерацией, позволяя вашему бизнесу адаптироваться к&nbsp;постоянно меняющимся условиям
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="services">
+          <picture class="services__bg d-sm-none">
+            <source srcset="images/services-bg.webp" type="image/webp">
+            <img src="images/services-bg.jpg" alt="Услуги" width="1920" height="1372"></picture>
+          <div class="container container--size-md services__container">
+            <header class="services__header">
+              <h2 class="services__title">Услуги</h2>
+              <h2 class="services__subtitle">
+                Помогаем бизнесу выйти на новый уровень эффективности с&nbsp;помощью&nbsp;ИИ
+              </h2>
+            </header>
+            <div class="row services__list">
+              <div class="row__col--4 services__list-col">
+                <article class="services-card services__list-card">
+                  <div class="services-card__header">
+                    <div class="u-box u-box--theme-white-light services-card__media">
+                      <picture class="services-card__picture">
+                        <img src="images/services-card-icon-1.svg" width="80" height="80" alt="Консалтинг"></picture>
+                    </div>
+                  </div>
+                  <div class="u-box u-box--theme-white-light services-card__inner">
+                    <div class="services-card__content">
+                      <h3 class="services-card__title">Консалтинг</h3>
+                      <div class="u-content services-card__text">
+                        <p>
+                          Анализируем задачи клиента и&nbsp;разрабатываем оптимальные ИИ-решения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="services-card__footer">
+                      <a href="#contacts" class="js-anchor btn btn--size-lg btn--theme-accent-fill services-card__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Связаться</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col--4 services__list-col">
+                <article class="services-card services__list-card">
+                  <div class="services-card__header">
+                    <div class="u-box u-box--theme-white-light services-card__media">
+                      <picture class="services-card__picture">
+                        <img src="images/services-card-icon-2.svg" width="80" height="80" alt="Разработка и внедрение"></picture>
+                    </div>
+                  </div>
+                  <div class="u-box u-box--theme-white-light services-card__inner">
+                    <div class="services-card__content">
+                      <h3 class="services-card__title">Разработка и&nbsp;внедрение</h3>
+                      <div class="u-content services-card__text">
+                        <p>
+                          Интегрируем искусственный интеллект в&nbsp;бизнес-процессы, повышая их&nbsp;эффективность
+                        </p>
+                      </div>
+                    </div>
+                    <div class="services-card__footer">
+                      <a href="#contacts" class="js-anchor btn btn--size-lg btn--theme-accent-fill services-card__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Связаться</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col--4 services__list-col">
+                <article class="services-card services__list-card">
+                  <div class="services-card__header">
+                    <div class="u-box u-box--theme-white-light services-card__media">
+                      <picture class="services-card__picture">
+                        <img src="images/services-card-icon-3.svg" width="80" height="80" alt="Техподдержка"></picture>
+                    </div>
+                  </div>
+                  <div class="u-box u-box--theme-white-light services-card__inner">
+                    <div class="services-card__content">
+                      <h3 class="services-card__title">Техподдержка</h3>
+                      <div class="u-content services-card__text">
+                        <p>
+                          Обеспечиваем сопровождение и&nbsp;обучение для эффективного использования ИИ-инструментов
+                        </p>
+                      </div>
+                    </div>
+                    <div class="services-card__footer">
+                      <a href="#contacts" class="js-anchor btn btn--size-lg btn--theme-accent-fill services-card__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Связаться</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq">
+          <div class="container container--size-md faq__container">
+            <h2 class="faq__title">
+              Отвечаем на ваши
+              <span class="color-accent">вопросы</span>
+            </h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="faq__list">
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Как искусственный интеллект может помочь моему бизнесу?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        ИИ может автоматизировать рутинные задачи, анализировать большие объемы данных для принятия более точных решений и&nbsp;предсказывать поведение клиентов, что помогает улучшить эффективность и&nbsp;повысить прибыль.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">
+                      Чем машинное обучение отличается от традиционного программирования?
+                    </h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        В традиционном программировании разработчики пишут инструкции вручную, тогда как в&nbsp;машинном обучении ИИ обучается на данных, чтобы самостоятельно находить решения для поставленных задач без жестких правил.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Какие данные необходимы для обучения ИИ?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Для обучения ИИ необходимы качественные данные, относящиеся к&nbsp;конкретной задаче. Это могут быть текстовые, визуальные, звуковые данные или структурированные данные из баз данных.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Как долго занимает разработка ИИ-решения?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Время разработки зависит от сложности проекта и объемов данных, но обычно на создание и&nbsp;внедрение ИИ-системы уходит от&nbsp;нескольких месяцев до года.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">
+                      Насколько сложен процесс интеграции ИИ в существующие
+                      <br>бизнес-роцессы?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Интеграция ИИ требует тщательной подготовки и планирования, но с&nbsp;правильным подходом и опытом она может быть реализована плавно и&nbsp;с&nbsp;минимальными изменениями в текущих процессах.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Может ли ИИ улучшать свои результаты со временем?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Да, с помощью машинного обучения ИИ может непрерывно обучаться на новых данных и&nbsp;улучшать свои результаты и&nbsp;прогнозы, адаптируясь к&nbsp;изменениям в&nbsp;бизнесе или отрасли.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Как ИИ может помочь с прогнозированием рынка?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        ИИ использует исторические данные, тренды и сложные алгоритмы для анализа и&nbsp;предсказания будущих изменений на&nbsp;рынке, что позволяет компаниям принимать более информированные решения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Какие риски связаны с использованием ИИ?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Риски могут включать ошибки в прогнозах из-за некачественных данных, а&nbsp;также этические вопросы, связанные с&nbsp;приватностью и&nbsp;справедливостью решений, принятых ИИ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-black-light faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-6 faq-card__title">Как защитить данные при работе с ИИ?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text">
+                      <p>
+                        Для защиты данных важно использовать шифрование, ограничить доступ к&nbsp;чувствительной информации и&nbsp;постоянно обновлять системы безопасности, чтобы предотвратить утечки и&nbsp;кибератаки.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+          <div class="container container--size-md contacts__container">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="row contacts__row">
+              <div class="contacts__row-col contacts__row-col--subtitle row__col--12">
+                <p class="contacts__subtitle">
+                  Если у вас есть вопросы или&nbsp;предложения, пожалуйста, заполните форму ниже, и&nbsp;наша команда свяжется с вами в&nbsp;ближайшее&nbsp;время
+                </p>
+              </div>
+              <div class="row__col--6 contacts__row-col contacts__row-col--form">
+                <form action="#" class="contacts__form">
+                  <div class="contacts__form-input u-input">
+                    <label class="u-input__label">
+                      <input type="text" name="name" class="u-input__el u-input__el--size-sm u-input__el--theme-accent-outline" required placeholder="Ваше имя"></label>
+                  </div>
+                  <div class="contacts__form-input u-input">
+                    <label class="u-input__label">
+                      <input type="email" name="email" class="u-input__el u-input__el--size-sm u-input__el--theme-accent-outline" required placeholder="Email"></label>
+                  </div>
+                  <div class="contacts__form-input u-input">
+                    <label class="u-input__label">
+                      <textarea name="message" class="u-input__el u-input__el--size-sm u-input__el--theme-accent-outline u-input__el--type-textarea u-scrollbar" style="min-height: 108rem;" placeholder="Ваш вопрос (не обязательно)"></textarea>
+                    </label>
+                  </div>
+                  <p class="contacts__form-privacy">
+                    Нажимая на кнопку, вы соглашаетесь с нашей
+                    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
+                  </p>
+                  <button type="submit" class="btn btn--size-lg btn--theme-accent-fill contacts__form-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Отправить</span>
+                    </span>
+                  </button>
+                </form>
+              </div>
+              <div class="row__col--6 contacts__row-col contacts__row-col--content">
+                <div class="contacts__content">
+                  <div class="contacts__item">
+                    <p class="contacts__item-title">Контакты</p>
+                    <ul class="contacts__item-list">
+                      <li>
+                        <a href="tel:+79999999999" target="_blank">+7 999 999 99 99</a>
+                      </li>
+                      <li>
+                        <a href="mailto:hello@loftpineapple.com" target="_blank">hello@loftpineapple.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contacts__item">
+                    <p class="contacts__item-title">Адрес</p>
+                    <ul class="contacts__item-list">
+                      <li>Москва, улица Волхонка, 15</li>
+                    </ul>
+                  </div>
+                  <div class="contacts__item">
+                    <p class="contacts__item-title">социальные сети</p>
+                    <ul class="sc-list contacts__item-sc">
+                      <li class="sc-list__item">
+                        <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#sc-telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="sc-list__item">
+                        <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#sc-phone"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="sc-list__item">
+                        <a href="https://www.google.com/" class="sc-list__link" target="_blank" rel="noopener noreferrer">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#sc-hh"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer site__footer">
+        <div class="container container--size-md footer__container">
+          <div class="row footer__row">
+            <div class="row__col--4 footer__col footer__col--logo">
+              <a href="/" class="logo logo--size-sm footer__logo">
+                <span class="logo__title">
+                  Искусственный
+                  <br>интеллект</span>
+              </a>
+              <p class="footer__copyright d-md-none">
+                © 2024 Искусственный интеллект.
+                <br>Все права защищены.</p>
+            </div>
+            <div class="footer__col footer__col--subnav row__col--2">
+              <nav class="footer__nav" role="navigation">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <p class="footer__nav-title">сайт</p>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#intro" class="js-anchor footer__nav-link">Главная</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#about" class="js-anchor footer__nav-link">О компании</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#services" class="js-anchor footer__nav-link">Услуги</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#faq" class="js-anchor footer__nav-link">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row__col--4 footer__col footer__col--nav">
+              <nav class="footer__nav" role="navigation">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <p class="footer__nav-title">помощь</p>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#contacts" class="js-anchor footer__nav-link">Контакты</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="https://www.google.com/" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="https://www.google.com/" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Условия использования</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="https://www.google.com/" class="footer__nav-link" target="_blank" rel="noopener noreferrer">Договор оферты</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="d-md-block footer__copyright">
+                © 2024 Искусственный интеллект.
+                <br>Все права защищены.</p>
+            </div>
+          </div>
+          <picture class="footer__hero">
+            <img src="images/gif/sphere.gif" width="530" height="530" alt="Искусственный интеллект"></picture>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="js/app.min.js??=v=20240821143026"></script>
+</body>
+</html>

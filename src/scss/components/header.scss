@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  &__container {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+  }
+  &__inner {
+    width: 100%;
+    margin: 10rem 0;
+    padding: 24rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media (max-width: $lg) {
+      padding: 14rem;
+    }
+    &-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  &__logo {
+    flex-shrink: 0;
+  }
+  &__dropdown {
+    flex-grow: 1;
+    @media (max-width: $lg) {
+      background: rgba($blackColor, .6);
+      backdrop-filter: blur(10px);
+      height: calc(var(--vh,1vh) * 100);
+      padding: 20rem var(--gap-container);
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      transition: $transition;
+      transition-property: visibility, opacity;
+      overflow-x: hidden;
+      overflow-y: auto;
+      z-index: 998;
+    }
+    &:not(.is-show) {
+      @media (max-width: $lg) {
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .header__dropdown-inner {
+        @media (max-width: $lg) {
+          transform: translateY(20vh);
+        }
+      }
+    }
+    &-inner {
+      display: flex;
+      align-items: center;
+      transition: $transition;
+      transition-property: transform;
+      @media (max-width: $lg) {
+        background: $blackColor;
+        width: 100%;
+        min-height: 100%;
+        padding: 24rem;
+        flex-direction: column;
+        align-items: initial;
+        border-radius: $radiusSm;
+      }
+    }
+    &-header {
+      @media (max-width: $lg) {
+        margin: 0 0 18rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &-logo {
+      font-size: 16rem;
+    }
+    &-sc {
+      margin: 32rem 0 16rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__nav {
+    flex-grow: 1;
+    &-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      @media (max-width: $lg) {
+        flex-wrap: wrap;
+      }
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-link {
+      padding: 8rem 24rem;
+      display: block;
+      transition: $transition;
+      transition-property: color;
+      @media (max-width: $lg) {
+        padding: 14rem 0;
+      }
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+  &__btn-call {
+    flex-shrink: 0;
+  }
+  &__toggle {
+    &-open {
+      @extend %btn-reset;
+      background: url('data:image/svg+xml,%3Csvg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0.5 5C0.223857 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H23.5C23.7761 4 24 4.22386 24 4.5C24 4.77614 23.7761 5 23.5 5H0.5Z" fill="url(%23paint0_linear_204_33)"/%3E%3Cpath d="M0.5 13C0.223857 13 0 12.7761 0 12.5C0 12.2239 0.223858 12 0.5 12H23.5C23.7761 12 24 12.2239 24 12.5C24 12.7761 23.7761 13 23.5 13H0.5Z" fill="url(%23paint1_linear_204_33)"/%3E%3Cpath d="M4.5 21C4.22386 21 4 20.7761 4 20.5C4 20.2239 4.22386 20 4.5 20H23.5C23.7761 20 24 20.2239 24 20.5C24 20.7761 23.7761 21 23.5 21H4.5Z" fill="url(%23paint2_linear_204_33)"/%3E%3Cdefs%3E%3ClinearGradient id="paint0_linear_204_33" x1="-1.21818e-08" y1="5" x2="0.00155631" y2="3.96395" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%234ADEDE"/%3E%3Cstop offset="0.32" stop-color="%233BCCE2"/%3E%3Cstop offset="0.645" stop-color="%232BBBE7"/%3E%3Cstop offset="1" stop-color="%231AA7EC"/%3E%3C/linearGradient%3E%3ClinearGradient id="paint1_linear_204_33" x1="-2.89455e-09" y1="13" x2="0.00155632" y2="11.964" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%234ADEDE"/%3E%3Cstop offset="0.32" stop-color="%233BCCE2"/%3E%3Cstop offset="0.645" stop-color="%232BBBE7"/%3E%3Cstop offset="1" stop-color="%231AA7EC"/%3E%3C/linearGradient%3E%3ClinearGradient id="paint2_linear_204_33" x1="4" y1="21" x2="4.00187" y2="19.964" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%234ADEDE"/%3E%3Cstop offset="0.32" stop-color="%233BCCE2"/%3E%3Cstop offset="0.645" stop-color="%232BBBE7"/%3E%3Cstop offset="1" stop-color="%231AA7EC"/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A') center / contain no-repeat;
+      width: 25rem;
+      height: 25rem;
+      margin: 0 0 0 auto;
+      flex: 0 0 25rem;
+    }
+    &-close {
+      @extend %btn-reset;
+      background: url('data:image/svg+xml,%3Csvg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M3.70711 5.12117C3.31658 4.73065 3.31658 4.09748 3.70711 3.70696V3.70696C4.09763 3.31643 4.7308 3.31643 5.12132 3.70696L20.6777 19.2633C21.0682 19.6538 21.0682 20.287 20.6777 20.6775V20.6775C20.2871 21.068 19.654 21.068 19.2635 20.6775L3.70711 5.12117Z" fill="url(%23paint0_linear_203_25)"/%3E%3Cpath d="M5.12117 20.6777C4.73065 21.0682 4.09748 21.0682 3.70696 20.6777V20.6777C3.31643 20.2871 3.31643 19.654 3.70696 19.2634L19.2633 3.7071C19.6538 3.31657 20.287 3.31657 20.6775 3.7071V3.7071C21.068 4.09762 21.068 4.73079 20.6775 5.12131L5.12117 20.6777Z" fill="url(%23paint1_linear_203_25)"/%3E%3Cdefs%3E%3ClinearGradient id="paint0_linear_203_25" x1="3" y1="4.41406" x2="4.46959" y2="2.95328" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%234ADEDE"/%3E%3Cstop offset="0.32" stop-color="%233BCCE2"/%3E%3Cstop offset="0.645" stop-color="%232BBBE7"/%3E%3Cstop offset="1" stop-color="%231AA7EC"/%3E%3C/linearGradient%3E%3ClinearGradient id="paint1_linear_203_25" x1="4.41406" y1="21.3848" x2="2.95328" y2="19.9152" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%234ADEDE"/%3E%3Cstop offset="0.32" stop-color="%233BCCE2"/%3E%3Cstop offset="0.645" stop-color="%232BBBE7"/%3E%3Cstop offset="1" stop-color="%231AA7EC"/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A') center / contain no-repeat;
+      width: 25rem;
+      height: 25rem;
+      margin: 0 0 0 auto;
+      flex: 0 0 25rem;
+    }
+  }
+}

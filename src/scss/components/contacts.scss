@@ -1,0 +1,131 @@
+.contacts {
+  padding: 90rem 0 180rem;
+  @media (max-width: $lg) {
+    padding: 50rem 0 100rem;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 76rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+  }
+  &__subtitle {
+    max-width: 580rem;
+    margin: 0 0 28rem;
+    font-size: var(--fs-7);
+    line-height: $lineHeight6;
+    color: $greyColor;
+  }
+  &__row {
+  }
+  &__row-col {
+    &--subtitle {
+    }
+    &--form {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--content {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__form {
+    &-title {
+    }
+    &-input {
+      margin: 0 0 15rem;
+      textarea {
+        @media (max-width: $sm) {
+          min-height: 90rem !important;
+        }
+      }
+    }
+    &-privacy {
+      max-width: 470rem;
+      margin: 21rem 0 32rem;
+      font-size: var(--fs-9);
+      line-height: $lineHeight5;
+      color: $greyMediumColor;
+      @media (max-width: $lg) {
+        font-size: 12rem;
+      }
+      @media (max-width: $sm) {
+        max-width: 350rem;
+        margin: 16rem 0 36rem;
+      }
+      a {
+        color: $accentColor;
+        transition: $transition;
+        &:hover {
+          text-decoration: none;
+          @media (min-width: $lg-mf) {
+            opacity: .6;
+          }
+        }
+      }
+    }
+    &-btn {
+      width: 100%;
+    }
+  }
+  &__content {
+    max-width: 400rem;
+    margin: 0 0 0 auto;
+    padding-top: 3rem;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      margin-top: 60rem;
+    }
+  }
+  &__item {
+    font-size: var(--fs-5);
+    & + & {
+      margin-top: 53rem;
+      @media (max-width: $sm) {
+        margin-top: 40rem;
+      }
+    }
+    &-title {
+      margin: 0 0 24rem;
+      font-size: var(--fs-9);
+      color: $greyMediumColor;
+      text-transform: uppercase;
+      @media (max-width: $sm) {
+        font-size: 14rem;
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 16rem;
+      }
+    }
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        margin: 0;
+        padding: 0;
+        &:not(:last-child) {
+          margin-bottom: 12rem;
+        }
+      }
+      a {
+        transition: $transition;
+        &:hover {
+          text-decoration: none;
+          @media (min-width: $lg-mf) {
+            color: $accentColor;
+          }
+        }
+      }
+    }
+    &-sc {
+    }
+  }
+}

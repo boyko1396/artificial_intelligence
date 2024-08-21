@@ -1,0 +1,100 @@
+$siteResolution: 1px;
+$mainFont: 'Montserrat';
+$accentFont: 'Unbounded';
+$mainWeight: 400;
+$lineHeight1: 1.3333;
+$lineHeight2: 1.15384615385;
+$lineHeight3: 1.2222;
+$lineHeight4: 1.28571428571;
+$lineHeight5: 1.25;
+$lineHeight6: 1.2;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1220rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusXs: 6rem;
+$radiusESm: 8rem;
+$radiusSm: 12rem;
+
+$whiteColor: #ffffff;
+$blackColor: #02030C;
+$blackFullColor: #000002;
+$blackNeutralColor: #33333C;
+$greyColor: #BEBEBE;
+$greyMediumColor: #636363;
+$blueColor: #00AFF4;
+$blueDarkColor: #2AA9EC;
+$greenColor: #26D366;
+$redColor: #D5001C;
+$accentColor: $blueColor;
+
+$bgSite: $blackColor;
+
+$fontFamily: $mainFont, $accentFont, sans-serif, Arial;
+$fontAccent: $accentFont, $mainFont, sans-serif, Arial;
+$fontColor: $whiteColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 18rem;
+  --fs-1: 52rem;
+  --fs-2: 36rem;
+  --fs-3: 32rem;
+  --fs-4: 28rem;
+  --fs-5: 24rem;
+  --fs-6: 22rem;
+  --fs-7: 20rem;
+  --fs-8: 18rem;
+  --fs-9: 16rem;
+  --fs-10: 14rem;
+  --fs-11: 12rem;
+  --fs-12: 10rem;
+
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --scroll-offset: 128rem;
+
+  --header-height: var(--scroll-offset);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+    --fs-default: 16rem;
+    --fs-1: 28rem;
+    --fs-2: 24rem;
+    --fs-3: 24rem;
+    --fs-4: 18rem;
+    --fs-5: 20rem;
+    --fs-6: 18rem;
+    --fs-7: 16rem;
+
+    --gap-container: 14rem;
+    --gap-container-: -14rem;
+
+    --scroll-offset: 98rem;
+  }
+}

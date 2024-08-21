@@ -1,0 +1,56 @@
+.achievements {
+  padding: 94rem 0;
+  position: relative;
+  @media (max-width: $lg) {
+    padding: 50rem 0;
+  }
+  &__bg {
+    width: 1344rem;
+    position: absolute;
+    bottom: -64rem;
+    right: 0;
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    @media (max-width: $md) {
+      bottom: -120rem;
+    }
+    @media (max-width: $sm) {
+      width: 100%;
+      margin-top: 120rem;
+      top: 50%;
+      bottom: initial;
+      transform: translateY(-50%);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 76rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+  }
+  &__list {
+    margin-bottom: var(--gap-fluid-);
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      @media (max-width: $md) {
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

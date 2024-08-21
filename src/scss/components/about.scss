@@ -1,0 +1,38 @@
+.about {
+  padding: 164rem 0 90rem;
+  @media (max-width: $lg) {
+    padding: 50rem 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 76rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+    @media (max-width: $md) {
+      text-align: center;
+    }
+  }
+  &__list {
+    @media (max-width: $md) {
+      max-width: 540rem;
+      margin: 0 auto;
+    }
+    @media (max-width: $xs) {
+      max-width: 332rem;
+    }
+    &-card {
+      margin: -52rem 0;
+      @media (max-width: $xs) {
+        margin: -38rem 0;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

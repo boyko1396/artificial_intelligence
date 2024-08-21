@@ -1,0 +1,24 @@
+.faq {
+  padding: 157rem 0 90rem;
+  @media (max-width: $lg) {
+    padding: 50rem 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 77rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: var(--gap);
+        @media (max-width: $lg) {
+          margin-bottom: 12rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.services {
+  padding: 90rem 0 157rem;
+  position: relative;
+  @media (max-width: $lg) {
+    padding: 50rem 0;
+  }
+  &__bg {
+    width: 100%;
+    min-width: 1920rem;
+    margin-top: 222rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    @media (max-width: $lg) {
+      margin-top: 40rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__container {
+  }
+  &__header {
+    max-width: 480rem;
+    margin: 0 0 130rem;
+    @media (max-width: $lg) {
+      margin-bottom: 86rem;
+    }
+  }
+  &__title {
+    margin: 0 0 28rem;
+    @media (max-width: $lg) {
+      margin-bottom: 16rem;
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    font-size: var(--fs-7);
+    line-height: $lineHeight6;
+    font-family: $fontFamily;
+    color: $greyColor;
+  }
+  &__list {
+    &-col {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &:not(:last-child) {
+        @media (max-width: $sm) {
+          margin-bottom: 72rem;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}
