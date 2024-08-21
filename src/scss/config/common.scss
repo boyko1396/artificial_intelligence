@@ -409,7 +409,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 20rem $blackColor;
-    border-radius: 50%;
+    border-radius: 50% !important;
     position: relative;
     @media (max-width: $lg) {
       width: 116rem;
